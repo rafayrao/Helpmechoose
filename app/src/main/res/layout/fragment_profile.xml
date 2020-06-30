@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/unit_20"
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/unit_70"
+        android:src="@drawable/mark"
+        android:layout_height="@dimen/unit_70">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/unit_16"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/unit_10"
+            android:text="Mark Zukckerberg"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:lines="2"
+                android:layout_margin="@dimen/unit_10"
+                android:textSize="@dimen/unit_12"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/unit_10"
+                android:layout_gravity="center"
+                android:text="Masters in computer science from harvard university"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_marginTop="@dimen/unit_10"
+        android:background="@drawable/button_simple_background"
+        android:layout_marginStart="@dimen/unit_20"
+        android:text="Follow"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/unit_120"
+        android:layout_height="33dp"></Button>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/unit_16"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/unit_20"
+                android:text="12k "
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:lines="2"
+                android:textSize="@dimen/unit_16"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/unit_10"
+                android:layout_gravity="center"
+                android:text="Followers "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/unit_16"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/unit_20"
+                android:text="1,723"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:lines="2"
+                android:textSize="@dimen/unit_16"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/unit_10"
+                android:layout_gravity="center"
+                android:text="Posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C1C1C1"></View>
+
+    <TextView
+        android:lines="2"
+        android:layout_marginTop="@dimen/unit_10"
+        android:textSize="@dimen/unit_12"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/unit_20"
+        android:text="The trouble is,you think you have time....."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:tint="#25A0F5"
+        android:layout_marginStart="@dimen/unit_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+        <TextView
+            android:lines="2"
+            android:textSize="@dimen/unit_12"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/unit_5"
+            android:text="Newyork,America "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usergallery"
+        android:layout_marginEnd="@dimen/unit_5"
+        android:layout_marginBottom="@dimen/unit_50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

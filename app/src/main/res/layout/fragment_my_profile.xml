@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/unit_20"
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/unit_70"
+            android:src="@drawable/mark"
+            android:layout_height="@dimen/unit_70">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="@dimen/unit_10"
+                    android:textSize="@dimen/unit_16"
+                    android:textColor="@color/black"
+                    android:text="12k "
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:lines="2"
+                    android:textSize="@dimen/unit_16"
+                    android:textColor="@color/black"
+                    android:text="Followers "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,723"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/unit_16"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:lines="2"
+                    android:textSize="@dimen/unit_16"
+                    android:textColor="@color/black"
+                    android:text="Posts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="@dimen/unit_10"
+                    android:textSize="@dimen/unit_16"
+                    android:textColor="@color/black"
+                    android:text="1,000"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:lines="2"
+                    android:textSize="@dimen/unit_16"
+                    android:textColor="@color/black"
+                    android:text="Following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/unit_20"
+        android:textSize="@dimen/unit_16"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/unit_20"
+        android:text="Mark Zukckerberg"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:lines="2"
+        android:layout_margin="@dimen/unit_10"
+        android:textSize="@dimen/unit_12"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/unit_20"
+        android:text="The Trouble is when ,you think you have time ...."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:layout_marginTop="@dimen/unit_10"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+        <ImageView
+            android:layout_marginTop="@dimen/unit_10"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+    </LinearLayout>
+
+
+   <RelativeLayout
+       android:id="@+id/editprofile_btn"
+       android:background="@drawable/toobarborder"
+       android:layout_marginStart="@dimen/unit_20"
+       android:layout_marginEnd="@dimen/unit_20"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/unit_30">
+       <TextView
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:textSize="@dimen/unit_16"
+           android:layout_centerInParent="true"
+           android:text="Edit Profile"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"></TextView>
+   </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usergallery"
+        android:layout_marginBottom="@dimen/unit_50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

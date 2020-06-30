@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#9C7FD0</color>
+    <color name="colorAccent">#9C7FD0</color>
+
+
+
+    <color name="appClr">#FE0000</color>
+    <color name="basiColor">#E7E7E7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#ccc8c8</color>
+    <color name="backgroundOfTab">#F9F9F9</color>
+    <color name="black">#000000</color>
+    <color name="light_Black">#535151</color>
+    <color name="red">#FE0000</color>
+    >>>>>>> .theirs    <!-- Screens background color-->
+    <color name="bg_screen1">#FE0000</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#fdfdfd</color>
+    <color name="dot_dark_screen2">#ffffff</color>
+    <color name="dot_dark_screen3">#ffffff</color>
+
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#FE0000</color>
+    <color name="dot_light_screen2">#FE0000</color>
+    <color name="dot_light_screen3">#FE0000</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_darker_gray">#DEDEDE</color>
+    <color name="color_dark_green">#24933c</color>
+    <color name="color_transparent">@android:color/transparent</color>
+    <color name="recyclerview_back_color">#F4F6FA</color>
+    <color name="light_grey_box_color">#F5F7FB</color>
+    <color name="golden_color">#ED8A30</color>
+    <color name="font_color">#202020</color>
+    <color name="grey_background">#F2F5FA</color>
+    <color name="light_grey_font_color">#ACBBCB</color>
+    <color name="dark_color">#194370</color>
+    <color name="off_white_color">#E5EAEE</color>
+    <color name="greenColor">#72cf52</color>
+    <color name="transparent">#00000000</color>
+
+
+</resources>

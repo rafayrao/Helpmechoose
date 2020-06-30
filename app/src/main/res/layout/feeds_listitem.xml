@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/unit_50"
+        android:layout_height="@dimen/unit_50"
+        android:src="@drawable/mark"
+        android:id="@+id/profileimg"
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_20"
+        ></de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:id="@+id/username"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/unit_14"
+            android:textColor="@color/black"
+            android:text="raorafay"></TextView>
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/sidebar"
+                android:layout_marginEnd="@dimen/unit_20"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/unit_24"
+                android:layout_height="@dimen/unit_24"
+                android:src="@drawable/ic_more_vert_black_24dp"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/marklarge"
+        android:id="@+id/feedimg"
+        android:layout_marginTop="@dimen/unit_5"
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/unit_10"
+        android:layout_marginStart="@dimen/unit_20"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+        <ImageView
+            android:layout_marginStart="@dimen/unit_20"
+            android:src="@drawable/ic_sms_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_marginTop="@dimen/unit_10"
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Likes"
+        android:textColor="@color/black"></TextView>
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textStyle="bold"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="raorafay"
+        android:textColor="@color/black"></TextView>
+
+        <TextView
+             android:layout_marginStart="@dimen/unit_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just recreating those moment"
+            android:textColor="@color/black"></TextView>
+
+        <ImageView
+
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+        <ImageView
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+
+    </LinearLayout>
+ <!--   <View
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_5"
+       android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C1C1C1"></View>-->
+</LinearLayout>

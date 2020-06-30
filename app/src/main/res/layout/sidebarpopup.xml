@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_margin="@dimen/unit_60"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/images"
+            android:layout_margin="@dimen/unit_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_comment_black_24dp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comment"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="@dimen/unit_20"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_black_24dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reshare"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="@dimen/unit_20"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_save_black_24dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="save"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/images"
+            android:layout_marginStart="@dimen/unit_10"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unit_20"
+                android:text="Report..."
+                android:textColor="@color/black"
+                android:textSize="@dimen/unit_16"></TextView>
+
+        <TextView
+            android:layout_marginTop="@dimen/unit_30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/unit_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn on notification"></TextView>
+
+        <TextView
+            android:layout_marginTop="@dimen/unit_30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/unit_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy link..."></TextView>
+        <TextView
+            android:layout_marginBottom="@dimen/unit_30"
+            android:layout_marginTop="@dimen/unit_30"
+            android:id="@+id/sidebaritem"
+            android:textColor="@color/black"
+            android:textSize="@dimen/unit_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mute"></TextView>
+
+        </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

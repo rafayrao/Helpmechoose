@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#F1E8F1"
+    android:orientation="vertical"
+    tools:context=".Fragments.SigninWithSocialMediaFragment">
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:id="@+id/fbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_56"
+        android:layout_marginTop="@dimen/unit_4"
+        android:background="@drawable/socialmedialayout_background"
+        android:backgroundTint="#395796">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/unit_80"
+            android:layout_width="@dimen/unit_30"
+            android:layout_height="@dimen/unit_30"
+            android:layout_marginLeft="@dimen/unit_16"
+            android:background="@drawable/fb" />
+
+        <TextView
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Sigin with Facebook"
+            android:textColor="@color/white"
+            android:textSize="@dimen/unit_18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:id="@+id/InstaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_56"
+        android:layout_marginTop="@dimen/unit_10"
+        android:background="@drawable/socialmedialayout_background"
+        android:backgroundTint="#8E41BD">
+
+        <ImageView
+            android:layout_marginStart="@dimen/unit_80"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/unit_30"
+            android:layout_height="@dimen/unit_30"
+            android:layout_marginLeft="@dimen/unit_16"
+            android:src="@drawable/instagram" />
+
+        <TextView
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Signin with insta"
+            android:textColor="@color/white"
+            android:textSize="@dimen/unit_18sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:layout_gravity="center"
+       android:backgroundTint="@color/white"
+        android:id="@+id/GLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_56"
+        android:layout_marginTop="@dimen/unit_10"
+        android:background="@drawable/socialmedialayout_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="@dimen/unit_80"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/unit_30"
+            android:layout_height="@dimen/unit_30"
+            android:layout_marginLeft="@dimen/unit_16"
+            android:src="@drawable/google" />
+
+        <TextView
+
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Sigin with Google"
+            android:textColor="#ABABAB"
+            android:textSize="@dimen/unit_18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:id="@+id/twitterLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_56"
+        android:layout_marginTop="@dimen/unit_10"
+        android:background="@drawable/socialmedialayout_background"
+        android:backgroundTint="#20ABF4">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/unit_80"
+            android:layout_width="@dimen/unit_30"
+            android:layout_height="@dimen/unit_30"
+            android:layout_marginLeft="@dimen/unit_16"
+            android:src="@drawable/twiiter" />
+
+        <TextView
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Signin with Twitter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/unit_18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:id="@+id/linkdenLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_56"
+        android:layout_marginTop="@dimen/unit_10"
+        android:background="@drawable/socialmedialayout_background"
+        android:backgroundTint="#0086BE">
+
+        <ImageView
+            android:layout_marginStart="@dimen/unit_80"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/unit_30"
+            android:layout_height="@dimen/unit_30"
+            android:layout_marginLeft="@dimen/unit_16"
+            android:src="@drawable/linkendin" />
+
+        <TextView
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Signin with LInkedin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/unit_18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

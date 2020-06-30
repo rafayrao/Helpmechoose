@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EditProfileFragment">
+
+    <LinearLayout
+        android:background="@drawable/toobarborder"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_marginStart="@dimen/unit_20"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/unit_22"
+            android:text="Edit Profile"
+            android:textColor="@color/black"></TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="@dimen/unit_40"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/profileimg"
+    android:layout_width="@dimen/unit_120"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/mark"
+    android:layout_marginTop="@dimen/unit_20"
+    android:layout_height="@dimen/unit_120"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/unit_50"
+        android:layout_below="@+id/profileimg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="Display name"
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+        <EditText
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_marginEnd="@dimen/unit_20"
+            android:hint="Display name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+            android:text="Bio"
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_marginEnd="@dimen/unit_20"
+            android:layout_marginTop="@dimen/unit_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_marginEnd="@dimen/unit_20"
+            android:hint="Enter your bio...."></EditText>
+        <Button
+
+            android:background="@drawable/button_background"
+            android:layout_marginTop="@dimen/unit_50"
+            android:layout_gravity="center"
+            android:text="Update Profile"
+            android:layout_width="@dimen/unit_180"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
