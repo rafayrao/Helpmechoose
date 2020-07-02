@@ -8,12 +8,14 @@ import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.matrimonialapp.helpmechoose.Fragments.EditProfileFragment;
 import com.matrimonialapp.helpmechoose.Fragments.FeedsFragment;
 import com.matrimonialapp.helpmechoose.Fragments.MyProfileFragment;
+import com.matrimonialapp.helpmechoose.Fragments.MyVotesFragment;
 import com.matrimonialapp.helpmechoose.Fragments.NotificationsFragment;
 import com.matrimonialapp.helpmechoose.Fragments.ProfileFragment;
 import com.matrimonialapp.helpmechoose.Fragments.SigninWithSocialMediaFragment;
@@ -61,7 +63,12 @@ public class MainActivity extends AppCompatActivity {
 
                         //        LoadFragment(new DownloadsFragment());
                         return true;
+                 /*   case R.id.myvotes:
+                        Utils.FragemntTransactionNormal(getSupportFragmentManager(),R.id.container,new MyVotesFragment(),true,"Myvotes");
 
+                        //        LoadFragment(new DownloadsFragment());
+                        return true;
+*/
 
                     case R.id.camera:
                         Utils.FragemntTransactionNormal(getSupportFragmentManager(),R.id.container,
@@ -107,5 +114,6 @@ public class MainActivity extends AppCompatActivity {
             Utils.showToastMessage("Failed haha", this);
         }
     }
+
 
 }

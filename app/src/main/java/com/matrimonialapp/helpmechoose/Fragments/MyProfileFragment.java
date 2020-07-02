@@ -74,7 +74,7 @@ View view;
         }
         userGalleryAdapter=new MyProfileGalleryAdapter(getActivity(), list);
         //     LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
-        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),3));
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
 
         recyclerView.setAdapter(userGalleryAdapter);
     }

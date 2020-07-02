@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ShareSecurityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profileimg"
+            android:layout_width="@dimen/unit_100"
+            android:layout_height="@dimen/unit_100"
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_marginTop="@dimen/unit_20"
+            android:src="@drawable/marklarge"></ImageView>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">    <TextView
+            android:id="@+id/cation"
+            android:layout_marginEnd="@dimen/unit_15"
+            android:layout_marginTop="@dimen/unit_20"
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/unit_14"
+            android:lines="2"
+            android:textColor="@color/black"
+            android:text="It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers."></TextView>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/seemorelink"
+                android:layout_marginStart="@dimen/unit_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/unit_16"
+                android:lines="2"
+                android:textColor="@color/gray"
+                android:text="see more ...."></TextView>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/seelesslink"
+                android:layout_marginStart="@dimen/unit_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/unit_16"
+                android:lines="2"
+                android:textColor="@color/gray"
+                android:text="see less"></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/unit_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:tint="#25A0F5"
+            android:layout_marginStart="@dimen/unit_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+
+        <TextView
+            android:lines="2"
+            android:textSize="@dimen/unit_12"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/unit_5"
+            android:text="Newyork,America "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_40"
+        android:layout_marginEnd="@dimen/unit_40"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:text="Ends in"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/unit_16"
+            android:layout_height="wrap_content"></TextView>
+
+        <LinearLayout
+        android:layout_weight="0.3"
+          android:background="@drawable/spinner_border"
+        android:layout_width="0dp"
+        android:layout_height="45dp">
+        <Spinner
+            android:id="@+id/hours"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="20sp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20sp">
+        </Spinner>
+    </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.05"
+            android:layout_height="wrap_content"></Space>
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:background="@drawable/spinner_border"
+            android:layout_width="0dp"
+            android:layout_height="45dp">
+            <Spinner
+                android:id="@+id/mins"
+                android:hint="Education"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20sp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="20sp">
+            </Spinner>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"></Space>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/unit_20"
+        android:layout_marginStart="@dimen/unit_40"
+        android:layout_marginEnd="@dimen/unit_40"
+        android:background="@drawable/spinner_border"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <Spinner
+
+            android:id="@+id/security_type"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20sp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20sp">
+        </Spinner>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/unit_20"
+        android:layout_marginStart="@dimen/unit_40"
+        android:layout_marginEnd="@dimen/unit_40"
+        android:id="@+id/editprofile_btn"
+        android:background="@drawable/spinner_border"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <Spinner
+
+            android:id="@+id/allowance_vote"
+            android:hint="Education"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20sp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20sp">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:tint="#25A0F5"
+            android:src="@drawable/facebook"
+            android:layout_marginStart="@dimen/unit_10"
+            android:layout_width="@dimen/unit_24"
+            android:layout_height="24dp"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unit_5"
+            android:lines="2"
+            android:text="Share on Facebook "
+            android:textColor="@color/black"
+            android:textSize="@dimen/unit_12"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/instagram"
+            android:tint="#25A0F5"
+            android:layout_marginStart="@dimen/unit_10"
+            android:layout_width="@dimen/unit_24"
+            android:layout_height="@dimen/unit_24"></ImageView>
+
+        <TextView
+            android:lines="2"
+            android:textSize="@dimen/unit_12"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/unit_5"
+            android:text="Share to Instagram "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/linkendin"
+            android:tint="#25A0F5"
+            android:layout_marginStart="@dimen/unit_10"
+            android:layout_width="@dimen/unit_24"
+            android:layout_height="@dimen/unit_24"></ImageView>
+
+        <TextView
+            android:lines="2"
+            android:textSize="@dimen/unit_12"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/unit_5"
+            android:text="Share to LInkedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/twiiter"
+            android:tint="#25A0F5"
+            android:layout_marginStart="@dimen/unit_10"
+            android:layout_width="@dimen/unit_24"
+            android:layout_height="@dimen/unit_24"></ImageView>
+
+        <TextView
+            android:lines="2"
+            android:textSize="@dimen/unit_12"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/unit_5"
+            android:text="Share to Twitter "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:tint="#25A0F5"
+            android:layout_marginStart="@dimen/unit_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+
+        <TextView
+            android:lines="2"
+            android:textSize="@dimen/unit_12"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/unit_5"
+            android:text="Share to other network "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginBottom="@dimen/unit_80"
+        android:textColor="@color/white"
+        android:text="Share Now"
+        android:layout_marginTop="@dimen/unit_50"
+        android:layout_gravity="center"
+        android:background="@drawable/button_oval_background"
+        android:layout_width="@dimen/unit_180"
+        android:layout_height="@dimen/unit_40"></Button>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

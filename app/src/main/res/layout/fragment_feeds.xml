@@ -2,8 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".Fragments.FeedsFragment">
+    <LinearLayout
+        android:background="@drawable/toobarborder"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        >
+             <TextView
+            android:layout_marginStart="@dimen/unit_20"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="My Feeds"
+            android:textColor="@color/black"></TextView>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/myvotes"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/unit_20"
+                android:layout_marginStart="@dimen/unit_20"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/unit_18"
+                android:text="My Votes"
+                android:textColor="#67A0FD"></TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/feedrecycler"

@@ -125,5 +125,7 @@
     <dimen name="unit_15">15sp</dimen>
     <dimen name="unit_30">30dp</dimen>
     <dimen name="unit_5">5dp</dimen>
+    <dimen name="unit_25">25dp</dimen>
+    <dimen name="unit_35">35dp</dimen>
 
 </resources>

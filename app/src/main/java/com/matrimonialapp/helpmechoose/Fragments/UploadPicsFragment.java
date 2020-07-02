@@ -14,6 +14,7 @@ import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -28,6 +29,7 @@ import com.fxn.pix.Options;
 import com.fxn.pix.Pix;
 import com.fxn.utility.PermUtil;
 import com.matrimonialapp.helpmechoose.R;
+import com.matrimonialapp.helpmechoose.Utils.Utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -55,6 +57,7 @@ public class UploadPicsFragment extends Fragment {
       ArrayList<String> returnValue;
     ImageView uploadimageafter;
     int count=0;
+    Button addlocation;
     static final int OPEN_MEDIA_PICKER = 1;  // Request code
 
     public UploadPicsFragment() {
@@ -70,8 +73,19 @@ public class UploadPicsFragment extends Fragment {
         initviews();
         uploadclick();
         uploadimageagain();
+        Addlocation();
 
         return view;
+    }
+
+    private void Addlocation() {
+        addlocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Utils.FragemntTransactionNormal(getActivity().getSupportFragmentManager(),R.id.container,new AddlocationFragment(),true,"Addlocation Fragment");
+
+            }
+        });
     }
 
     private void uploadimageagain() {
@@ -136,6 +150,7 @@ public class UploadPicsFragment extends Fragment {
 
         uploadimageafter.setVisibility(View.GONE);
         uploadimage.setVisibility(View.VISIBLE);
+        addlocation=view.findViewById(R.id.addlocation);
 
     }
 

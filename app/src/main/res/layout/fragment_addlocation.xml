@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.AddlocationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <TextView
+      android:textColor="@color/black"
+      android:layout_marginTop="@dimen/unit_20"
+      android:layout_marginStart="@dimen/unit_20"
+      android:text="Search location"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/unit_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_60"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="@dimen/unit_24"
+            android:layout_height="@dimen/unit_24"
+            android:src="@drawable/mark"
+            ></de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/unit_20"
+            android:layout_marginStart="@dimen/unit_10"
+            android:id="@+id/editprofile_btn"
+            android:background="@drawable/toobarborder"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <EditText
+                android:layout_marginStart="@dimen/unit_20"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:textStyle="bold"
+                android:textSize="@dimen/unit_16"
+                android:hint="www.amazon.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/unit_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_60"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_marginStart="@dimen/unit_20"
+            android:layout_width="@dimen/unit_24"
+            android:layout_height="@dimen/unit_24"
+            android:src="@drawable/ic_my_location_black_24dp"
+            ></ImageView>
+
+       <LinearLayout
+                android:layout_marginEnd="@dimen/unit_20"
+                android:layout_marginStart="@dimen/unit_10"
+                    android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+           <TextView
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:layout_marginTop="@dimen/unit_10"
+               android:layout_marginStart="@dimen/unit_20"
+               android:text="Search location"
+               android:textSize="@dimen/unit_16"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"></TextView>
+
+       </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_60"
+        android:layout_marginTop="@dimen/unit_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="@dimen/unit_10"
+            android:layout_width="@dimen/unit_24"
+            android:layout_height="@dimen/unit_24"
+            android:layout_marginStart="@dimen/unit_20"
+            android:src="@drawable/ic_location_on_black_24dp"></ImageView>
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/unit_20"
+            android:layout_marginStart="@dimen/unit_10"
+            android:background="@drawable/toobarborder"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <EditText
+                android:layout_marginStart="@dimen/unit_20"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:textStyle="bold"
+                android:textSize="@dimen/unit_16"
+                android:hint="Search location on map..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+       </LinearLayout>
+    <RelativeLayout
+        android:layout_marginStart="@dimen/unit_20"
+        android:layout_marginEnd="@dimen/unit_20"
+        android:background="@drawable/borderlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_400">
+
+        <ImageView
+            android:id="@+id/loc"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/unit_30"
+            android:layout_centerInParent="true"
+            android:tint="@color/red"
+            android:src="@drawable/ic_location_on_black_24dp"></ImageView>
+        <TextView
+            android:layout_below="@+id/loc"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/unit_20"
+            android:layout_marginStart="@dimen/unit_20"
+            android:text="Google Map"
+            android:textSize="@dimen/unit_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/setlocation"
+        android:layout_marginBottom="@dimen/unit_150"
+        android:layout_width="190dp"
+        android:layout_height="@dimen/unit_40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/unit_60"
+        android:background="@drawable/button_oval_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unit_10"
+            android:gravity="center"
+            android:text="Set Location "
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
