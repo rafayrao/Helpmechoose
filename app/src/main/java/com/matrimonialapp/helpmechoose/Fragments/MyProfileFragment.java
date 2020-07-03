@@ -72,7 +72,13 @@ View view;
 
             list.add(new UsergalleryimageModel(R.drawable.mark));
         }
-        userGalleryAdapter=new MyProfileGalleryAdapter(getActivity(), list);
+        userGalleryAdapter=new MyProfileGalleryAdapter(getActivity(), list, new MyProfileGalleryAdapter.itemclickListener() {
+            @Override
+            public void onitemclick(UsergalleryimageModel model, int pos) {
+                Utils.FragemntTransactionNormal(getActivity().getSupportFragmentManager(),R.id.container,new MySharedPicVoteDescpFragment(),true,"Sharedphotos Fragment");
+
+            }
+        });
         //     LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
 

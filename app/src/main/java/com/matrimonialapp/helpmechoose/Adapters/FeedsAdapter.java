@@ -69,6 +69,23 @@ public class FeedsAdapter extends RecyclerView.Adapter<FeedsAdapter.ViewHoder> {
         holder.likes.setText(list.getLikes());
         holder.cation.setText(list.getCaptions());
         holder.comment.setText(list.getComment());
+        if(list.getBid()==1)
+        {
+
+        }
+        else if(list.getBid()==2)
+        {
+
+        }
+        else if(list.getBid()==3)
+        {
+
+        }
+
+        else
+        {
+
+        }
         holder.cation.post(new Runnable() {
             @Override
             public void run() {

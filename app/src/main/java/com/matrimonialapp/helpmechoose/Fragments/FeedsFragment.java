@@ -61,12 +61,29 @@ public class FeedsFragment extends Fragment {
 
     private void preparedata() {
 
-        for(int i=0;i<10;i++)
-        {
 
             list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
-                    "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once"));
-        }
+                    "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",1));
+
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",2));
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",3));
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",4));
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",1));
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",2));
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",3));
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",4));
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",1));
+        list.add(new FeedsModel(R.drawable.mark,R.drawable.marklarge,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,R.drawable.mraksmall,"100 Likes","" +
+                "It's natural to want to share your happiness with others. Whether you're flashing a genuine smile in a selfie or capturing the incredible beauty of a sunset in your post, a good quote that captures the joy and happiness you're feeling can be contagious to your followers.","nice caption ,great to here from you .You are the truely inspiration for the young generation.I wish i would meet you atleast once",2));
+
         feedsAdapter=new FeedsAdapter(getActivity(), list, new FeedsAdapter.itemclickListener() {
             @Override
             public void onitemclick(FeedsModel model, int pos) {

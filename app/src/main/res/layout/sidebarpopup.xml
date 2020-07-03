@@ -8,13 +8,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
+            android:layout_marginTop="@dimen/unit_20"
+            android:orientation="horizontal"
+            android:weightSum="1"
             android:id="@+id/images"
-            android:layout_margin="@dimen/unit_20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
+                android:layout_weight="0.34"
                 android:orientation="vertical"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content">
             <ImageView
                 android:layout_gravity="center"
@@ -22,14 +25,16 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_mode_comment_black_24dp"></ImageView>
     <TextView
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="comment"></TextView>
             </LinearLayout>
             <LinearLayout
+                android:layout_weight="0.33"
                 android:layout_marginStart="@dimen/unit_20"
                 android:orientation="vertical"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/share"
@@ -38,14 +43,16 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_share_black_24dp"></ImageView>
                 <TextView
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="reshare"></TextView>
             </LinearLayout>
             <LinearLayout
+                android:layout_weight="0.33"
                 android:layout_marginStart="@dimen/unit_20"
                 android:orientation="vertical"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_gravity="center"
@@ -53,6 +60,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_save_black_24dp"></ImageView>
                 <TextView
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="save"></TextView>

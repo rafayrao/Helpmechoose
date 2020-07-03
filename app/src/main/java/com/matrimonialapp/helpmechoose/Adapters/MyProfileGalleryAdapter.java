@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.matrimonialapp.helpmechoose.Models.FeedsModel;
 import com.matrimonialapp.helpmechoose.Models.UsergalleryimageModel;
 import com.matrimonialapp.helpmechoose.R;
 
@@ -20,9 +21,17 @@ public class MyProfileGalleryAdapter extends RecyclerView.Adapter<MyProfileGalle
 
     Context context;
     List<UsergalleryimageModel> listitem;
-    public MyProfileGalleryAdapter(Context context, List<UsergalleryimageModel> listitem){
+    itemclickListener itemclickListener;
+
+    public MyProfileGalleryAdapter(Context context, List<UsergalleryimageModel> listitem,itemclickListener itemclickListener){
         this.context=context;
         this.listitem=listitem;
+        this.itemclickListener= itemclickListener;
+    }
+
+    public interface itemclickListener
+    {
+        public void onitemclick(UsergalleryimageModel model, int pos);
     }
 
     @NonNull
@@ -35,10 +44,15 @@ public class MyProfileGalleryAdapter extends RecyclerView.Adapter<MyProfileGalle
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHoder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHoder holder, final int position) {
 
-        UsergalleryimageModel list= listitem.get(position);
-
+        final UsergalleryimageModel list= listitem.get(position);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                itemclickListener.onitemclick(list,position);
+            }
+        });
 
     }
 

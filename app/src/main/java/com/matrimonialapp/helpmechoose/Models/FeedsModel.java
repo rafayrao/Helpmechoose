@@ -3,8 +3,9 @@ package com.matrimonialapp.helpmechoose.Models;
 public class FeedsModel {
     int profileimg,uploadedimg, img1,img2,img3,img4;
     String likes,captions,comment;
+    int bid;
 
-    public FeedsModel(int profileimg, int uploadedimg, int img1, int img2, int img3, int img4, String likes, String captions, String comment) {
+    public FeedsModel(int profileimg, int uploadedimg, int img1, int img2, int img3, int img4, String likes, String captions, String comment, int bid) {
         this.profileimg = profileimg;
         this.uploadedimg = uploadedimg;
         this.img1 = img1;
@@ -14,6 +15,15 @@ public class FeedsModel {
         this.likes = likes;
         this.captions = captions;
         this.comment = comment;
+        this.bid = bid;
+    }
+
+    public int getBid() {
+        return bid;
+    }
+
+    public void setBid(int bid) {
+        this.bid = bid;
     }
 
     public int getProfileimg() {
@@ -87,4 +97,6 @@ public class FeedsModel {
     public void setComment(String comment) {
         this.comment = comment;
     }
+
+
 }

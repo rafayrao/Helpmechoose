@@ -8,14 +8,19 @@
     android:orientation="vertical"
     tools:context=".Fragments.SigninWithSocialMediaFragment">
 
-
+<ImageView
+    android:layout_marginStart="@dimen/unit_20"
+    android:layout_marginEnd="@dimen/unit_20"
+    android:src="@drawable/logo"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"></ImageView>
     <LinearLayout
         android:layout_marginStart="@dimen/unit_20"
         android:layout_marginEnd="@dimen/unit_20"
         android:id="@+id/fbLogin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/unit_56"
-        android:layout_marginTop="@dimen/unit_4"
+        android:layout_marginTop="@dimen/unit_20"
         android:background="@drawable/socialmedialayout_background"
         android:backgroundTint="#395796">
 
