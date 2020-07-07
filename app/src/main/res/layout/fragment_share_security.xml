@@ -80,7 +80,7 @@
 
         <TextView
             android:lines="2"
-            android:textSize="@dimen/unit_12"
+            android:textSize="@dimen/unit_15"
             android:textColor="@color/black"
             android:layout_marginStart="@dimen/unit_5"
             android:text="Newyork,America "
@@ -213,7 +213,7 @@
             android:lines="2"
             android:text="Share on Facebook "
             android:textColor="@color/black"
-            android:textSize="@dimen/unit_12"></TextView>
+            android:textSize="@dimen/unit_13"></TextView>
 
     </LinearLayout>
 
@@ -232,7 +232,7 @@
 
         <TextView
             android:lines="2"
-            android:textSize="@dimen/unit_12"
+            android:textSize="@dimen/unit_13"
             android:textColor="@color/black"
             android:layout_marginStart="@dimen/unit_5"
             android:text="Share to Instagram "
@@ -256,7 +256,7 @@
 
         <TextView
             android:lines="2"
-            android:textSize="@dimen/unit_12"
+            android:textSize="@dimen/unit_13"
             android:textColor="@color/black"
             android:layout_marginStart="@dimen/unit_5"
             android:text="Share to LInkedIn"
@@ -279,13 +279,13 @@
             android:layout_height="@dimen/unit_24"></ImageView>
 
         <TextView
-            android:lines="2"
-            android:textSize="@dimen/unit_12"
-            android:textColor="@color/black"
-            android:layout_marginStart="@dimen/unit_5"
-            android:text="Share to Twitter "
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></TextView>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unit_5"
+            android:lines="2"
+            android:text="Share to Twitter "
+            android:textColor="@color/black"
+            android:textSize="@dimen/unit_13"></TextView>
 
     </LinearLayout>
 
@@ -304,7 +304,7 @@
 
         <TextView
             android:lines="2"
-            android:textSize="@dimen/unit_12"
+            android:textSize="@dimen/unit_13"
             android:textColor="@color/black"
             android:layout_marginStart="@dimen/unit_5"
             android:text="Share to other network "
@@ -314,6 +314,7 @@
     </LinearLayout>
 
     <Button
+        android:textSize="@dimen/unit_16"
         android:layout_marginBottom="@dimen/unit_80"
         android:textColor="@color/white"
         android:text="Share Now"

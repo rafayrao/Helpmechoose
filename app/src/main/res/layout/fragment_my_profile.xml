@@ -93,7 +93,7 @@
     </LinearLayout>
     <TextView
         android:layout_marginTop="@dimen/unit_20"
-        android:textSize="@dimen/unit_16"
+        android:textSize="@dimen/unit_18"
         android:textColor="@color/black"
         android:layout_marginStart="@dimen/unit_20"
         android:text="Mark Zukckerberg"
@@ -107,7 +107,7 @@
     <TextView
         android:lines="2"
         android:layout_margin="@dimen/unit_10"
-        android:textSize="@dimen/unit_12"
+        android:textSize="@dimen/unit_16"
         android:textColor="@color/black"
         android:layout_marginStart="@dimen/unit_20"
         android:text="The Trouble is when ,you think you have time ...."

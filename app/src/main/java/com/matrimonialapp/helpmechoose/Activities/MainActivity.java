@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             fragment.findFragmentByTag("ProfileFragment").onActivityResult(requestCode, resultCode, data);
         }
         else {
-            Utils.showToastMessage("Failed haha", this);
+            Utils.showToastMessage("", this);
         }
     }
 

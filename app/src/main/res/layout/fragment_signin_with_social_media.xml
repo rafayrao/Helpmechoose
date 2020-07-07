@@ -9,24 +9,26 @@
     tools:context=".Fragments.SigninWithSocialMediaFragment">
 
 <ImageView
-    android:layout_marginStart="@dimen/unit_20"
-    android:layout_marginEnd="@dimen/unit_20"
+    android:layout_marginStart="@dimen/unit_10"
+    android:layout_marginEnd="@dimen/unit_10"
     android:src="@drawable/logo"
     android:layout_width="match_parent"
-    android:layout_height="70dp"></ImageView>
+    android:layout_height="90dp"></ImageView>
     <LinearLayout
-        android:layout_marginStart="@dimen/unit_20"
-        android:layout_marginEnd="@dimen/unit_20"
+
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/unit_40"
+        android:layout_marginEnd="@dimen/unit_40"
         android:id="@+id/fbLogin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/unit_56"
-        android:layout_marginTop="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_40"
         android:background="@drawable/socialmedialayout_background"
         android:backgroundTint="#395796">
 
         <ImageView
             android:layout_gravity="center"
-            android:layout_marginStart="@dimen/unit_80"
+            android:layout_marginStart="@dimen/unit_40"
             android:layout_width="@dimen/unit_30"
             android:layout_height="@dimen/unit_30"
             android:layout_marginLeft="@dimen/unit_16"
@@ -45,8 +47,9 @@
 
 
     <LinearLayout
-        android:layout_marginStart="@dimen/unit_20"
-        android:layout_marginEnd="@dimen/unit_20"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/unit_40"
+        android:layout_marginEnd="@dimen/unit_40"
         android:id="@+id/InstaLogin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/unit_56"
@@ -55,10 +58,10 @@
         android:backgroundTint="#8E41BD">
 
         <ImageView
-            android:layout_marginStart="@dimen/unit_80"
-            android:layout_gravity="center"
-            android:layout_width="@dimen/unit_30"
+            android:layout_width="27dp"
             android:layout_height="@dimen/unit_30"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/unit_40"
             android:layout_marginLeft="@dimen/unit_16"
             android:src="@drawable/instagram" />
 
@@ -73,8 +76,8 @@
 
     </LinearLayout>
     <LinearLayout
-        android:layout_marginStart="@dimen/unit_20"
-        android:layout_marginEnd="@dimen/unit_20"
+        android:layout_marginStart="@dimen/unit_40"
+        android:layout_marginEnd="@dimen/unit_40"
         android:layout_gravity="center"
        android:backgroundTint="@color/white"
         android:id="@+id/GLogin"
@@ -85,7 +88,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_marginStart="@dimen/unit_80"
+            android:layout_marginStart="@dimen/unit_40"
             android:layout_gravity="center"
             android:layout_width="@dimen/unit_30"
             android:layout_height="@dimen/unit_30"
@@ -106,8 +109,8 @@
 
 
     <LinearLayout
-        android:layout_marginStart="@dimen/unit_20"
-        android:layout_marginEnd="@dimen/unit_20"
+        android:layout_marginStart="@dimen/unit_40"
+        android:layout_marginEnd="@dimen/unit_40"
         android:id="@+id/twitterLogin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/unit_56"
@@ -117,7 +120,7 @@
 
         <ImageView
             android:layout_gravity="center"
-            android:layout_marginStart="@dimen/unit_80"
+            android:layout_marginStart="@dimen/unit_40"
             android:layout_width="@dimen/unit_30"
             android:layout_height="@dimen/unit_30"
             android:layout_marginLeft="@dimen/unit_16"
@@ -136,8 +139,8 @@
 
 
     <LinearLayout
-        android:layout_marginStart="@dimen/unit_20"
-        android:layout_marginEnd="@dimen/unit_20"
+        android:layout_marginStart="@dimen/unit_40"
+        android:layout_marginEnd="@dimen/unit_40"
         android:id="@+id/linkdenLogin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/unit_56"
@@ -146,7 +149,7 @@
         android:backgroundTint="#0086BE">
 
         <ImageView
-            android:layout_marginStart="@dimen/unit_80"
+            android:layout_marginStart="@dimen/unit_40"
             android:layout_gravity="center"
             android:layout_width="@dimen/unit_30"
             android:layout_height="@dimen/unit_30"

@@ -110,7 +110,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:src="@drawable/mraksmall"
+                    android:src="@drawable/lakes"
                     android:scaleType="fitXY"
                     android:id="@+id/image4_1"
                     android:layout_width="match_parent"
@@ -121,7 +121,7 @@
                     android:layout_weight="0.02"
                     android:layout_height="0dp"></Space>
                 <ImageView
-                    android:src="@drawable/mraksmall"
+                    android:src="@drawable/forst"
                     android:scaleType="fitXY"
                     android:id="@+id/image4_2"
                     android:layout_width="match_parent"
@@ -140,7 +140,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:src="@drawable/mraksmall"
+                    android:src="@drawable/beach2"
                     android:scaleType="fitXY"
                     android:id="@+id/image4_3"
                     android:layout_width="match_parent"
@@ -152,7 +152,7 @@
                     android:layout_weight="0.02"
                     android:layout_height="0dp"></Space>
                 <ImageView
-                    android:src="@drawable/mraksmall"
+                    android:src="@drawable/beach"
                     android:scaleType="fitXY"
                     android:id="@+id/image4_4"
                     android:layout_width="match_parent"

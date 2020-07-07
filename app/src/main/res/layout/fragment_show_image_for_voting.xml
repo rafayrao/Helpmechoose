@@ -200,14 +200,27 @@
                     android:layout_width="match_parent"
                     android:layout_weight="0.49"
                     android:layout_height="0dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <ImageView
                         android:layout_margin="@dimen/unit_10"
-                        android:src="@drawable/mraksmall"
+                        android:src="@drawable/forst"
                         android:scaleType="fitXY"
                         android:id="@+id/image4_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
 
+                    <CheckBox
+                        android:layout_marginTop="@dimen/unit_10"
+                        android:layout_marginEnd="@dimen/unit_10"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/checkb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_checkbox"
+                        />
+                    </RelativeLayout>
                 </LinearLayout>
                 <Space
                     android:layout_width="match_parent"
@@ -218,14 +231,28 @@
                     android:layout_width="match_parent"
                     android:layout_weight="0.49"
                     android:layout_height="0dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
                     <ImageView
                         android:layout_margin="@dimen/unit_10"
-                        android:src="@drawable/mraksmall"
+                        android:src="@drawable/beach"
                         android:scaleType="fitXY"
                         android:id="@+id/image4_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
+
+                    <CheckBox
+                        android:layout_marginTop="@dimen/unit_10"
+                        android:layout_marginEnd="@dimen/unit_10"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_checkbox"
+                        />
+                    </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
             <Space
@@ -243,14 +270,28 @@
                     android:layout_width="match_parent"
                     android:layout_weight="0.49"
                     android:layout_height="0dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
                     <ImageView
                         android:layout_margin="@dimen/unit_10"
-                        android:src="@drawable/mraksmall"
+                        android:src="@drawable/lakes"
                         android:scaleType="fitXY"
                         android:id="@+id/image4_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
+
+                    <CheckBox
+                        android:layout_marginTop="@dimen/unit_10"
+                        android:layout_marginEnd="@dimen/unit_10"
+                        android:layout_alignParentEnd="true"
+                          android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_checkbox"
+                        />
+                    </RelativeLayout>
                 </LinearLayout>
                 <Space
                     android:layout_width="match_parent"
@@ -261,14 +302,28 @@
                     android:layout_width="match_parent"
                     android:layout_weight="0.49"
                     android:layout_height="0dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/mraksmall"
+                        android:src="@drawable/beach2"
                         android:scaleType="fitXY"
                         android:id="@+id/image4_4"
                         android:layout_margin="@dimen/unit_10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:layout_marginTop="@dimen/unit_10"
+                        android:layout_marginEnd="@dimen/unit_10"
+                        android:layout_alignParentEnd="true"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_checkbox"
+                        />
+
+                    </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
 

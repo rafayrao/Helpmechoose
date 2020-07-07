@@ -51,7 +51,7 @@
     <dimen name="unit_8">8dp</dimen>
     <dimen name="unit_10">10dp</dimen>
     <dimen name="unit_12">12dp</dimen>
-    <dimen name="unit_14">14dp</dimen>
+    <dimen name="unit_14">16dp</dimen>
     <dimen name="unit_16">16dp</dimen>
     <dimen name="unit_18">18dp</dimen>
     <dimen name="unit_20">20dp</dimen>
@@ -127,5 +127,6 @@
     <dimen name="unit_5">5dp</dimen>
     <dimen name="unit_25">25dp</dimen>
     <dimen name="unit_35">35dp</dimen>
+    <dimen name="unit_13">13dp</dimen>
 
 </resources>

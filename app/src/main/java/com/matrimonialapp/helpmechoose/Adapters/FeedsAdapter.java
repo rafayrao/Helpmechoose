@@ -1,6 +1,7 @@
 package com.matrimonialapp.helpmechoose.Adapters;
 
 import android.content.Context;
+import android.net.Uri;
 import android.text.Layout;
 import android.text.TextUtils;
 import android.util.Log;
@@ -22,6 +23,7 @@ import com.matrimonialapp.helpmechoose.Models.FeedsModel;
 import com.matrimonialapp.helpmechoose.Models.notifications;
 import com.matrimonialapp.helpmechoose.R;
 
+import java.io.File;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -69,23 +71,49 @@ public class FeedsAdapter extends RecyclerView.Adapter<FeedsAdapter.ViewHoder> {
         holder.likes.setText(list.getLikes());
         holder.cation.setText(list.getCaptions());
         holder.comment.setText(list.getComment());
-        if(list.getBid()==1)
-        {
+        if (list.getBid() == 1) {
+
+            holder.for1image.setVisibility(View.VISIBLE);
+            holder.for2image.setVisibility(View.GONE);
+            holder.for3image.setVisibility(View.GONE);
+            holder.for4image.setVisibility(View.GONE);
+            Glide.with(context).load(list.getImg1()).into(holder.image1_1);
+
 
         }
-        else if(list.getBid()==2)
-        {
+        if (list.getBid()== 2) {
+            holder.for1image.setVisibility(View.GONE);
+            holder. for2image.setVisibility(View.VISIBLE);
+            holder.for3image.setVisibility(View.GONE);
+            holder.for4image.setVisibility(View.GONE);
+            Glide.with(context).load(list.getImg1()).into(holder.image2_1);
+            Glide.with(context).load(list.getImg2()).into(holder.image2_2);
 
-        }
-        else if(list.getBid()==3)
-        {
+             }
 
-        }
+        if (list.getBid() == 3) {
+            holder.for1image.setVisibility(View.GONE);
+            holder.for2image.setVisibility(View.GONE);
+            holder.for3image.setVisibility(View.VISIBLE);
+            holder. for4image.setVisibility(View.GONE);
 
-        else
-        {
+            Glide.with(context).load(list.getImg1()).into(holder.image3_1);
+            Glide.with(context).load(list.getImg2()).into(holder.image3_2);
+            Glide.with(context).load(list.getImg3()).into(holder.image3_3);
 
-        }
+         }
+        if (list.getBid() == 4) {
+            holder.for1image.setVisibility(View.GONE);
+            holder.for2image.setVisibility(View.GONE);
+            holder.for3image.setVisibility(View.GONE);
+            holder.for4image.setVisibility(View.VISIBLE);
+
+            Glide.with(context).load(list.getImg1()).into(holder.image4_1);
+            Glide.with(context).load(list.getImg2()).into(holder.image4_2);
+            Glide.with(context).load(list.getImg3()).into(holder.image4_3);
+            Glide.with(context).load(list.getImg4()).into(holder.image4_4);
+
+             }
         holder.cation.post(new Runnable() {
             @Override
             public void run() {
@@ -178,9 +206,10 @@ public class FeedsAdapter extends RecyclerView.Adapter<FeedsAdapter.ViewHoder> {
 
         RelativeLayout imageslayout;
         TextView likes;
-        ImageView feedimg,sidebar,image4_1,image4_2,image4_3,image4_4;
+        ImageView feedimg,sidebar,image4_1,image4_2,image4_3,image4_4,image3_1,image3_2,image3_3,image2_1,image2_2,image1_1;
         CircleImageView profileimg;
-        LinearLayout for4image;
+        LinearLayout for4image,for2image,for3image;
+        RelativeLayout for1image;
         TextView cation,seemorelink,seelesslink,comment,seemorelink_comment,seelesslink_comment;
 
         public ViewHoder(@NonNull View itemView) {
@@ -190,12 +219,28 @@ public class FeedsAdapter extends RecyclerView.Adapter<FeedsAdapter.ViewHoder> {
            // feedimg=(ImageView) itemView.findViewById(R.id.feedimg);
 
             imageslayout=itemView.findViewById(R.id.imageslayout);
-            for4image=(LinearLayout)itemView.findViewById(R.id.for4image);
-            profileimg=(CircleImageView)itemView.findViewById(R.id.profileimg);
+           profileimg=(CircleImageView)itemView.findViewById(R.id.profileimg);
             image4_1=(ImageView)itemView.findViewById(R.id.image4_1);
             image4_2=(ImageView)itemView.findViewById(R.id.image4_2);
             image4_3=(ImageView)itemView.findViewById(R.id.image4_3);
             image4_4=(ImageView)itemView.findViewById(R.id.image4_4);
+
+            image2_1=(ImageView)itemView.findViewById(R.id.image2_1);
+            image2_2=(ImageView)itemView.findViewById(R.id.image2_2);
+
+
+            image3_1=(ImageView)itemView.findViewById(R.id.image3_1);
+            image3_2=(ImageView)itemView.findViewById(R.id.image3_2);
+            image3_3=(ImageView)itemView.findViewById(R.id.image3_3);
+
+            image1_1=(ImageView)itemView.findViewById(R.id.image1_1);
+
+            for1image = itemView.findViewById(R.id.for1image);
+            for2image = itemView.findViewById(R.id.for2image);
+            for3image = itemView.findViewById(R.id.for3image);
+            for4image=(LinearLayout)itemView.findViewById(R.id.for4image);
+
+
             cation=(TextView)itemView.findViewById(R.id.cation);
             seemorelink=(TextView)itemView.findViewById(R.id.seemorelink);
             seelesslink=(TextView)itemView.findViewById(R.id.seelesslink);
